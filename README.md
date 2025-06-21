@@ -49,7 +49,7 @@ Enter your destination when prompted
 
 ---
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 - Use KNN (K-Nearest Neighbors) to recommend alternate or nearby destinations  
 - Add filters like budget, rating, or travel duration  
@@ -58,7 +58,7 @@ Enter your destination when prompted
 
 ---
 
-🙋‍♀️ Made by  
+## 🙋‍♀️ Made by  
 Radha Maddeshiya  
 B.Tech, Data Science (3rd Year)  
 Under Internship Task
