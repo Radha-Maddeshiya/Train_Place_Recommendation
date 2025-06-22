@@ -1,6 +1,16 @@
-Place Name,Location,Category,Ratings
-Imambara,Lucknow,Historical,4.5
-Sanchi Stupa,Bhopal,Historical,4.6
-Shanivar Wada,Pune,Historical,4.3
-India Gate,Delhi,Monument,4.7
-Kasi Vishwanath Tem,Varansi,Religious,4.8
+Place Name,Location,Category,Ratings,Latitude,Longitude
+Imambara,Lucknow,Historical,4.5,26.8467,80.9462
+Sanchi Stupa,Bhopal,Historical,4.6,23.2599,77.4126
+Shanivar Wada,Pune,Historical,4.3,18.5204,73.8567
+India Gate,Delhi,Monument,4.7,28.6129,77.2295
+Kasi Vishwanath Temple,Varanasi,Religious,4.8,25.3109,83.0106
+Vindhyachal Temple,Mirzapur,Religious,4.6,25.1433,82.5644
+Kedarnath Temple,Uttarakhand,Religious,4.7,30.7352,79.0669
+Elephanta Caves,Mumbai,Historical,4.3,18.9633,72.931
+Darjeeling,West Bengal,Hill Station,4.6,27.036,88.2627
+Hampi,Karnataka,Heritage,4.4,15.335,76.46
+Taj Mahal,Agra,Historical,4.9,27.1751,78.0421
+Red Fort,Delhi,Historical,4.6,28.6562,77.241
+Qutub Minar,Delhi,Historical,4.5,28.5244,77.1855
+Gateway of India,Mumbai,Monument,4.5,18.9218,72.8347
+Marine Drive,Mumbai,Scenic,4.6,18.943,72.8238

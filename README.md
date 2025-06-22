@@ -45,7 +45,7 @@ python recommendation.py
 
 ---
 
-Enter your destination when prompted
+## Enter your destination when prompted
 
 ---
 
