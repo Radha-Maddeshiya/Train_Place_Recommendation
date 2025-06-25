@@ -1,34 +1,56 @@
 import pandas as pd
-from sklearn.neighbors import NearestNeighbors
+from math import radians, sin, cos, sqrt, atan2
+from datetime import datetime
 
-df_trains = pd.read_csv("Train_details.csv")
-df_places = pd.read_csv("place_details.csv")
-df_trains["Destination_Coords"] = df_trains[["Destination_Lat", "Destination_Lon"]].values.tolist()
-df_places["Coords"] = df_places[["Latitude", "Longitude"]].values.tolist()
+place_file = "place_details.csv"
+train_file = "Train_details.csv"
 
-knn = NearestNeighbors(n_neighbors=3, metric='euclidean')
-knn.fit(df_places["Coords"].tolist())
+places_df = pd.read_csv(place_file)
+trains_df = pd.read_csv(train_file)
 
-def recommend(destination):
-    print(f"\n Trains to {destination.title()}:")
-    trains = df_trains[df_trains['Destination'].str.lower() == destination.lower()]
-    
-    if trains.empty:
-        print(" No trains found for this destination.")
-        return
+city = input("Enter your city (e.g., Gorakhpur): ").strip()
+arrival_time = input("Enter your arrival time (e.g., 04:30 PM): ").strip()
 
-    print(trains[['Train Name', 'Source', 'Departure Time', 'Arrival Time']].to_string(index=False))
-    
-    dest_coords = trains.iloc[0][['Destination_Lat', 'Destination_Lon']].tolist()
+user_lat = 26.7634
+user_lon = 83.3783
 
-    print(f"\n Nearby places to visit from {destination.title()}:")
-    distances, indices = knn.kneighbors([dest_coords])
-    
-    for i in indices[0]:
-        place = df_places.iloc[i]
-        print(f" {place['Place Name']} ({place['Location']}) - {place['Category']} - {place['Ratings']}★")
+places_df["Open Time"] = pd.to_datetime(places_df["Open Time"], format="%I:%M %p").dt.time
+places_df["Close Time"] = pd.to_datetime(places_df["Close Time"], format="%I:%M %p").dt.time
+if arrival_time.upper().endswith("AM") or arrival_time.upper().endswith("PM"):
+    if " " not in arrival_time:
+        arrival_time = arrival_time[:-2] + " " + arrival_time[-2:]
+current_time = datetime.strptime(arrival_time, "%I:%M %p").time()
 
+filtered_places = places_df[
+    (places_df["Location"].str.lower() == city.lower()) &
+    (places_df["Open Time"] <= current_time) &
+    (places_df["Close Time"] >= current_time) &
+    (places_df["Safety"].str.lower() == "safe")
+].copy()
 
-print("\n Welcome to Train & Place Recommendation System!")
-user_input = input(" Please enter your destination: ")
-recommend(user_input)
+def calculate_distance(lat1, lon1, lat2, lon2):
+    R = 6371.0  # Radius of Earth in km
+    lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
+    dlat, dlon = lat2 - lat1, lon2 - lon1
+    a = sin(dlat/2)**2 + cos(lat1)*cos(lat2)*sin(dlon/2)**2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    return round(R * c, 2)
+
+filtered_places["Distance (km)"] = filtered_places.apply(
+    lambda row: calculate_distance(user_lat, user_lon, row["Latitude"], row["Longitude"]), axis=1
+)
+
+filtered_places = filtered_places.sort_values("Distance (km)")
+
+print(f"\n Available Trains to {city.title()}:\n")
+print(trains_df[trains_df["Destination"].str.lower() == city.lower()][
+    ["Train Name", "Source", "Departure Time", "Arrival Time"]
+].to_string(index=False))
+
+if filtered_places.empty:
+    print("\n Sorry! No safe and open places found at this time.")
+else:
+    print(f"\n Recommended Places in {city.title()} (based on your arrival at {arrival_time}):\n")
+    print(filtered_places[
+        ["Place Name", "Category", "Ratings", "Distance (km)", "Open Time", "Close Time"]
+    ].to_string(index=False))

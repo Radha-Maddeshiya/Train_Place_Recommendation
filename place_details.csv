@@ -1,27 +1,29 @@
-Place Name,Location,Category,Ratings,Latitude,Longitude
-Imambara,Lucknow,Historical,4.5,26.8467,80.9462
-Sanchi Stupa,Bhopal,Historical,4.6,23.2599,77.4126
-Shanivar Wada,Pune,Historical,4.3,18.5204,73.8567
-India Gate,Delhi,Monument,4.7,28.6129,77.2295
-Kasi Vishwanath Temple,Varanasi,Religious,4.8,25.3109,83.0106
-Vindhyachal Temple,Mirzapur,Religious,4.6,25.1433,82.5644
-Kedarnath Temple,Uttarakhand,Religious,4.7,30.7352,79.0669
-Elephanta Caves,Mumbai,Historical,4.3,18.9633,72.931
-Darjeeling,West Bengal,Hill Station,4.6,27.036,88.2627
-Hampi,Karnataka,Heritage,4.4,15.335,76.46
-Taj Mahal,Agra,Historical,4.9,27.1751,78.0421
-Red Fort,Delhi,Historical,4.6,28.6562,77.241
-Qutub Minar,Delhi,Historical,4.5,28.5244,77.1855
-Gateway of India,Mumbai,Monument,4.5,18.9218,72.8347
-Marine Drive,Mumbai,Scenic,4.6,18.943,72.8238
-Gorakhnath Mandir,Gorakhpur,Religious,4.8,26.7634,83.3783
-Golghar Kali Mandir,Gorakhpur,Religious,4.5,26.7523,83.3711
-Nauka Vihar,Gorakhpur,Scenic,4.2,26.7637,83.3892
-Gorakhpur Zoo,Gorakhpur,WildLife,4.4,26.7485,83.3728
-Rail Museaum,Gorakhpur,Museum,4.1,26.755,83.3755
-City Mall,Gorakhpur,Shopping Mall,4.1,26.757,83.3733
-Indira Bal Vihar,Gorakhpur,Park,4.3,26.761,83.3702
-Geetapress,Gorakhpur,Religious,4.6,26.7575,83.3698
-Geeta Vatika,Gorakhpur,Religious,4.5,26.7645,83.376
-Betihata Hanuman Mandir,Gorakhpur,Religious,4.4,26.7558,83.3715
-Bypass Sankat Mochan Mandir,Gorakhpur,Religious,4.5,26.7542,83.3698
+Place Name,Location,Category,Ratings,Latitude,Longitude,Open Time,Close Time,Safety
+Imambara,Lucknow,Historical,4.5,26.8467,80.9462,6:00 AM,8:00 PM,Safe
+Sanchi Stupa,Bhopal,Historical,4.6,23.2599,77.4126,8:30 AM,5:30 PM,Safe
+Shanivar Wada,Pune,Historical,4.3,18.5204,73.8567,8:00 AM,6:30 PM,Safe
+India Gate,Delhi,Monument,4.7,28.6129,77.2295,12:00 AM,12:00 AM,Safe
+Kasi Vishwanath Temple,Varanasi,Religious,4.8,25.3109,83.0106,4:00 AM,11:00 PM,Safe
+Vindhyachal Temple,Mirzapur,Religious,4.6,25.1433,82.5644,4:00 AM,11:00 PM,Safe
+Kedarnath Temple,Uttarakhand,Religious,4.7,30.7352,79.0669,4:00 AM,11:00 PM,Safe
+Elephanta Caves,Mumbai,Historical,4.3,18.9633,72.931,9:00 AM,10:00 PM,Safe
+Darjeeling,West Bengal,Hill Station,4.6,27.036,88.2627,6:00 AM,9:00 PM,Safe
+Hampi,Karnataka,Heritage,4.4,15.335,76.46,6:00 AM,5:30 PM,Safe
+Taj Mahal,Agra,Historical,4.9,27.1751,78.0421,6:00 AM,6:30 PM,Safe
+Red Fort,Delhi,Historical,4.6,28.6562,77.241,9:30 AM,4:30 PM,Safe
+Qutub Minar,Delhi,Historical,4.5,28.5244,77.1855,7:00 AM,5:00 PM,Safe
+Gateway of India,Mumbai,Monument,4.5,18.9218,72.8347,5:00 AM,11:00 PM,Safe
+Marine Drive,Mumbai,Scenic,4.6,18.943,72.8238,12:00 AM,12:00 AM,Unsafe
+Gorakhnath Mandir,Gorakhpur,Religious,4.8,26.7634,83.3783,4:00 AM,10:00 PM,Safe
+Golghar Kali Mandir,Gorakhpur,Religious,4.5,26.7523,83.3711,5:00 AM,10:00 PM,Safe
+Nauka Vihar,Gorakhpur,Scenic,4.2,26.7637,83.3892,4:00 AM,10:00 PM,Unsafe
+Gorakhpur Zoo,Gorakhpur,WildLife,4.4,26.7485,83.3728,9:00 AM,5:30 PM,Safe
+Rail Museaum,Gorakhpur,Museum,4.1,26.755,83.3755,10:00 AM,5:00 PM,Safe
+City Mall,Gorakhpur,Shopping Mall,4.1,26.757,83.3733,10:30 AM,11:00 PM,Safe
+Indira Bal Vihar,Gorakhpur,Park,4.3,26.761,83.3702,6:00 AM,8:00 PM,Safe
+Geetapress,Gorakhpur,Religious,4.6,26.7575,83.3698,6:00 AM,8:00 PM,Safe
+Geeta Vatika,Gorakhpur,Religious,4.5,26.7645,83.376,6:00 AM,8:00 PM,Safe
+Betihata Hanuman Mandir,Gorakhpur,Religious,4.4,26.7558,83.3715,5:00 AM,11:00 PM,Safe
+Bypass Sankat Mochan Mandir,Gorakhpur,Religious,4.5,26.7542,83.3698,5:00 AM,11:00 PM,Safe
+Tarkulha Devi Mandir,Gorakhpur,Religious,4.7,26.7507,83.4875,4:00 AM,10:00 PM,Safe avoid going after 9 PM
+Budhiya Mata Mandir,Gorakhpur,Religious,4.6,26.764,83.3736,5:00 AM,9:00 PM,Safe

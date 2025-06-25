@@ -1,14 +1,14 @@
-Train Name,Source,Destination,Departure Time,Arrival Time,Source_Lat,Source_Lon,Destination_Lat,Destination_Lon
-Gorakhpur Express,Gorakhpur,Lucknow,6:00 AM,10:30 AM,26.7606,83.3732,26.8467,80.9462
-Delhi Express,Delhi,Bhopal,5:15 AM,1:30 PM,28.7041,77.1025,23.2599,77.4126
-Mumbai Express,Mumbai,Pune,8:00 PM,5:00 AM,19.076,72.8777,18.5204,73.8567
-Kolkata Express,Kolkata,Delhi,4:30 PM,10:00 AM,22.5726,88.3639,28.7041,77.1025
-Lucknow Express,Lucknow,Varanasi,7:45 AM,12:45 PM,26.8467,80.9462,25.3176,82.9739
-Prayagraj Express,Prayagraj,Mirzapur,6:00 AM,8:00 AM,25.4358,81.8463,25.1433,82.5644
-Haridwar Special,Delhi,Haridwar,5:30 AM,10:00 AM,28.7041,77.1025,30.0966,78.1622
-CST Express,Pune,Mumbai,7:00 AM,10:00 AM,18.5204,73.8567,18.9633,72.931
-Darjeeling Mail,Kolkata,NJP,8:00 PM,6:00 AM,22.5726,88.3639,27.036,88.2627
-Hampi Express,Bengaluru,Hampi,10:00 PM,7:00 AM,12.9716,77.5946,15.335,76.46
-Gatimaan Express,Delhi,Agra,8:10 AM,9:50 AM,28.7041,77.1025,27.1751,78.0421
-Agra Shatabdi,Agra,Delhi,7:00 PM,9:00 PM,27.1751,78.0421,28.7041,77.1025
-Konkan Express,Goa,Mumbai,6:00 PM,5:00 AM,15.2993,74.124,18.9218,72.8347
+Train Name,Source,Destination,Departure Time,Arrival Time,Source_Lat,Source_Lon,Destination_Lat,Destination_Lon,Departure Time,Arrival Time
+Gorakhpur Express,Gorakhpur,Lucknow,6:00 AM,10:30 AM,26.7606,83.3732,26.8467,80.9462,6:00 AM,10:30 AM
+Delhi Express,Delhi,Bhopal,5:15 AM,1:30 PM,28.7041,77.1025,23.2599,77.4126,7:00 AM,11:30 AM
+Mumbai Express,Mumbai,Pune,8:00 PM,5:00 AM,19.076,72.8777,18.5204,73.8567,8:00 AM,12:30 PM
+Kolkata Express,Kolkata,Delhi,4:30 PM,10:00 AM,22.5726,88.3639,28.7041,77.1025,9:00 AM,1:30 PM
+Lucknow Express,Lucknow,Varanasi,7:45 AM,12:45 PM,26.8467,80.9462,25.3176,82.9739,10:00 AM,2:30 PM
+Prayagraj Express,Prayagraj,Mirzapur,6:00 AM,8:00 AM,25.4358,81.8463,25.1433,82.5644,11:00 AM,3:30 PM
+Haridwar Special,Delhi,Haridwar,5:30 AM,10:00 AM,28.7041,77.1025,30.0966,78.1622,12:00 PM,4:30 PM
+CST Express,Pune,Mumbai,7:00 AM,10:00 AM,18.5204,73.8567,18.9633,72.931,1:00 PM,5:30 PM
+Darjeeling Mail,Kolkata,NJP,8:00 PM,6:00 AM,22.5726,88.3639,27.036,88.2627,2:00 PM,6:30 PM
+Hampi Express,Bengaluru,Hampi,10:00 PM,7:00 AM,12.9716,77.5946,15.335,76.46,3:00 PM,7:30 PM
+Gatimaan Express,Delhi,Agra,8:10 AM,9:50 AM,28.7041,77.1025,27.1751,78.0421,4:00 PM,8:30 PM
+Agra Shatabdi,Agra,Delhi,7:00 PM,9:00 PM,27.1751,78.0421,28.7041,77.1025,5:00 PM,9:30 PM
+Konkan Express,Goa,Mumbai,6:00 PM,5:00 AM,15.2993,74.124,18.9218,72.8347,6:00 PM,10:30 PM
