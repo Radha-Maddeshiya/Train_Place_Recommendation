@@ -10,6 +10,23 @@ places_df  = pd.read_csv(place_file, encoding='latin1')
 trains_df  = pd.read_csv(train_file)
 station_df = pd.read_csv(station_file)
 
+print("\n🎯 What type of places are you interested in?")
+category_map = {
+    "1": "Historical", "2": "Religious", "3": "Park", "4": "Monument",
+    "5": "Museum", "6": "Market", "7": "Garden", "8": "Beach",
+    "9": "Wildlife", "10": "Hill Station", "11": "Scenic", "12": "Ghat"
+}
+for key, value in category_map.items():
+    print(f"{key}. {value}")
+
+choice_input = input("Enter your choices (comma-separated numbers): ").split(',')
+
+selected_categories = [category_map[c.strip()] for c in choice_input if c.strip() in category_map]
+
+if not selected_categories:
+    print("\n⚠️ Invalid or no choice selected. Showing all categories.\n")
+
+
 city         = input("Enter your city : ").strip()
 arrival_text = input("Enter your arrival time (e.g. 06:30 AM) : ").strip()
 available_hr = float(input("How many hours can you spare? : ").strip())
@@ -35,7 +52,12 @@ places = places_df[
     (places_df["Location"].str.lower() == city.lower()) &
     (places_df["Close Time"] >= current_time) &
     (places_df["Safety"].str.lower() == "safe")
-].copy()
+]
+
+if selected_categories:
+    places = places[places["Category"].isin(selected_categories)]
+
+places = places.copy()
 
 def haversine(lat1, lon1, lat2, lon2):
     R=6371.0
