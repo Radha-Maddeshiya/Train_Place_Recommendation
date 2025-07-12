@@ -6,7 +6,7 @@ place_file = "place_details.csv"
 train_file = "Train_details.csv"
 station_file = "city_station_location.csv"
 
-places_df = pd.read_csv(place_file)
+places_df = pd.read_csv(place_file, encoding='latin1') 
 trains_df = pd.read_csv(train_file)
 station_df = pd.read_csv(station_file)
 
@@ -40,12 +40,14 @@ filtered_places = places_df[
 ].copy()
 
 def calculate_distance(lat1, lon1, lat2, lon2):
-    R = 6371.0  # km
+    R = 6371.0  # Radius of Earth in km
     lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
-    dlat, dlon = lat2 - lat1, lon2 - lon1
-    a = sin(dlat/2)**2 + cos(lat1)*cos(lat2)*sin(dlon/2)**2
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return round(R * c, 2)
+
 
 filtered_places["Distance (km)"] = filtered_places.apply(
     lambda row: calculate_distance(user_lat, user_lon, row["Latitude"], row["Longitude"]), axis=1
@@ -68,7 +70,41 @@ else:
 if filtered_places.empty:
     print("\n Sorry! No safe and open places found at this time.")
 else:
-    print(f"\n Recommended Places in {city.title()} (based on your arrival at {arrival_time}):\n")
-    print(filtered_places[
-    ["Place Name", "Category", "Ratings", "Distance (km)", "Open Time 12hr", "Close Time 12hr", "Map Link"]
-].to_string(index=False))
+    print(f"\n🗺️ Recommended Itinerary in {city.title()} (starting around {arrival_time}):\n")
+
+    # ---------- Build Smart Itinerary ----------
+    itinerary = []
+    unseen = filtered_places.copy()
+    curr_lat, curr_lon = user_lat, user_lon
+
+    while not unseen.empty:
+        idx = ((unseen[["Latitude", "Longitude"]] - [curr_lat, curr_lon])**2).sum(1).idxmin()
+        spot = unseen.loc[idx]
+        itinerary.append(spot)
+        unseen = unseen.drop(idx)
+
+        near = unseen[unseen.apply(
+            lambda r: calculate_distance(spot["Latitude"], spot["Longitude"], r["Latitude"], r["Longitude"]) < 0.8,
+            axis=1)]
+        if not near.empty:
+            for _, near_row in near.iterrows():
+                itinerary.append(near_row)
+            unseen = unseen.drop(near.index)
+
+        curr_lat, curr_lon = itinerary[-1][["Latitude", "Longitude"]]
+
+    # ---------- Show Itinerary ----------
+    for i, row in enumerate(itinerary):
+        print(f"🔸 {row['Place Name']} (opens at {row['Open Time'].strftime('%I:%M %p')})")
+        if i < len(itinerary) - 1:
+            next_place = itinerary[i+1]
+            dist = calculate_distance(row['Latitude'], row['Longitude'], next_place['Latitude'], next_place['Longitude'])
+            if dist < 0.8:
+                print(f"   🚶 Walk {int(dist * 1000)}m to {next_place['Place Name']}")
+            else:
+                print(f"   🚗 Auto to {next_place['Place Name']} ({dist} km)")
+
+    # ---------- All Notable Places ----------
+    print(f"\n📍 All Notable Places in {city.title()}:\n")
+    for pname in filtered_places["Place Name"].unique():
+        print(f"{pname}")

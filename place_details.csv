@@ -1,41 +1,131 @@
 Place Name,Location,Category,Ratings,Latitude,Longitude,Open Time,Close Time,Safety
-Imambara,Lucknow,Historical,4.5,26.8467,80.9462,6:00 AM,8:00 PM,Safe
-Sanchi Stupa,Bhopal,Historical,4.6,23.2599,77.4126,8:30 AM,5:30 PM,Safe
-Shanivar Wada,Pune,Historical,4.3,18.5204,73.8567,8:00 AM,6:30 PM,Safe
-India Gate,Delhi,Monument,4.7,28.6129,77.2295,12:00 AM,12:00 AM,Safe
-Kasi Vishwanath Temple,Varanasi,Religious,4.8,25.3109,83.0106,4:00 AM,11:00 PM,Safe
-Vindhyachal Temple,Mirzapur,Religious,4.6,25.1433,82.5644,4:00 AM,11:00 PM,Safe
-Kedarnath Temple,Uttarakhand,Religious,4.7,30.7352,79.0669,4:00 AM,11:00 PM,Safe
-Elephanta Caves,Mumbai,Historical,4.3,18.9633,72.931,9:00 AM,10:00 PM,Safe
-Darjeeling,West Bengal,Hill Station,4.6,27.036,88.2627,6:00 AM,9:00 PM,Safe
-Hampi,Karnataka,Heritage,4.4,15.335,76.46,6:00 AM,5:30 PM,Safe
-Taj Mahal,Agra,Historical,4.9,27.1751,78.0421,6:00 AM,6:30 PM,Safe
-Red Fort,Delhi,Historical,4.6,28.6562,77.241,9:30 AM,4:30 PM,Safe
-Qutub Minar,Delhi,Historical,4.5,28.5244,77.1855,7:00 AM,5:00 PM,Safe
-Gateway of India,Mumbai,Monument,4.5,18.9218,72.8347,5:00 AM,11:00 PM,Safe
-Marine Drive,Mumbai,Scenic,4.6,18.943,72.8238,12:00 AM,12:00 AM,Unsafe
-Gorakhnath Mandir,Gorakhpur,Religious,4.8,26.7634,83.3783,4:00 AM,10:00 PM,Safe
-Golghar Kali Mandir,Gorakhpur,Religious,4.5,26.7523,83.3711,5:00 AM,10:00 PM,Safe
-Nauka Vihar,Gorakhpur,Scenic,4.2,26.7637,83.3892,4:00 AM,10:00 PM,Unsafe
-Gorakhpur Zoo,Gorakhpur,WildLife,4.4,26.7485,83.3728,9:00 AM,5:30 PM,Safe
-Rail Museaum,Gorakhpur,Museum,4.1,26.755,83.3755,10:00 AM,5:00 PM,Safe
-City Mall,Gorakhpur,Shopping Mall,4.1,26.757,83.3733,10:30 AM,11:00 PM,Safe
-Indira Bal Vihar,Gorakhpur,Park,4.3,26.761,83.3702,6:00 AM,8:00 PM,Safe
-Geetapress,Gorakhpur,Religious,4.6,26.7575,83.3698,6:00 AM,8:00 PM,Safe
-Geeta Vatika,Gorakhpur,Religious,4.5,26.7645,83.376,6:00 AM,8:00 PM,Safe
-Betihata Hanuman Mandir,Gorakhpur,Religious,4.4,26.7558,83.3715,5:00 AM,11:00 PM,Safe
-Bypass Sankat Mochan Mandir,Gorakhpur,Religious,4.5,26.7542,83.3698,5:00 AM,11:00 PM,Safe
-Tarkulha Devi Mandir,Gorakhpur,Religious,4.7,26.7507,83.4875,4:00 AM,10:00 PM,Safe avoid going after 9 PM
-Budhiya Mata Mandir,Gorakhpur,Religious,4.6,26.764,83.3736,5:00 AM,9:00 PM,Safe
-Bara Imambara ,Lucknow,Heritage,4.6,26.847,80.915,6:30 AM,5:30 PM,Safe
-Chota Imambara ,Lucknow,Heritage,4.5,26.8475,80.9155,7:00 AM,7:00 PM,Safe
-Rumi Darwaza,Lucknow,Monument,4.4,26.846,80.919,12:00 AM,12:00 AM,Safe
-Husainabad Clock Tower,Lucknow,Monument,4.3,26.849,80.916,8:00 AM,8:00 PM,Safe
-Lucknow Zoo,Lucknow,WildLife,4.2,26.854,80.9195,8:00 AM,5:00 PM,Safe
-Dr. Ram Manohar Lohia Park,Lucknow,Park,4.3,26.833,80.928,5:00 AM,9:00 PM,Safe
+Aga Khan Palace,Pune,Historical,4.5,18.5533,73.9028,9:00 AM,5:30 PM,Safe
+Agrasen Ki Baoli,Delhi,Heritage,4.4,28.6269,77.222,9:00 AM,5:30 PM,Safe
+Akshardham Temple,Delhi,Religious,4.7,28.6127,77.2773,9:30 AM,6:30 PM,Safe (Strict)
+Ambedkar Memorial Park,Lucknow,Park,4.1,26.86,80.932,5:30 AM,8:30 PM,Safe
 Ambedkar Park,Lucknow,Park,4.1,26.86,80.932,5:30 AM,8:30 PM,Safe
+Assi Ghat,Varanasi,Ghat,4.6,25.2806,83.0049,12:00 AM,12:00 AM,Safe
+Badrinath Temple,Uttarakhand,Religious,4.7,30.7433,79.493,4:30 AM,9:00 PM,Safe (seasonal access)
+Bangalore Palace,Bangalore,Heritage,4.2,12.9981,77.592,10:00 AM,5:00 PM,Safe
+Bannerghatta National Park,Bangalore,Wildlife,4.2,12.8,77.577,9:00 AM,5:00 PM,Safe
+Bara Imambara,Lucknow,Heritage,4.6,26.847,80.915,6:30 AM,5:30 PM,Safe
+Bara Imambara ,Lucknow,Heritage,4.6,26.847,80.915,6:30 AM,5:30 PM,Safe
+Batasia Loop,Darjeeling,Heritage,4.5,27.0355,88.2663,7:00 AM,6:00 PM,Safe
+Betihata Hanuman Mandir,Gorakhpur,Religious,4.4,26.7558,83.3715,5:00 AM,11:00 PM,Safe
+Bharat Kala Bhavan Museum,Varanasi,Museum,4.3,25.2633,82.9893,10:30 AM,4:30 PM,Safe
+BHU Campus,Varanasi,Campus,4.7,25.2677,82.9913,12:00 AM,12:00 AM,Safe
+Birla Mandir (Laxmi Narayan),Delhi,Religious,4.5,28.6341,77.189,4:30 AM,9:00 PM,Safe
+Brindavan Gardens,Mysore,Garden,4.5,12.4246,76.5383,9:00 AM,9:00 PM,Safe
 British Residency,Lucknow,Historical,4.4,26.845,80.919,7:00 AM,7:00 PM,Safe
+British Residency,Lucknow,Historical,4.4,26.845,80.919,7:00 AM,7:00 PM,Safe
+Budhiya Mata Mandir,Gorakhpur,Religious,4.6,26.764,83.3736,5:00 AM,9:00 PM,Safe
+Bypass Sankat Mochan Mandir,Gorakhpur,Religious,4.5,26.7542,83.3698,5:00 AM,11:00 PM,Safe
+Chamundi Hill,Mysore,Religious,4.5,12.2969,76.6576,6:00 AM,8:00 PM,Safe
+Chandni Chowk,Delhi,Market,4.3,28.6562,77.23,10:00 AM,8:00 PM,Safe (Crowded)
 Chhatrapati shivaji Maharaj,Mumbai,Monument,4.7,18.9402,72.8345,12:00 AM,12:00 AM,Safe
+Chhatrapati Shivaji Terminus,Mumbai,Heritage,4.7,18.9402,72.8356,12:00 AM,12:00 AM,Safe
+Chota Imambara,Lucknow,Heritage,4.5,26.8475,80.9155,7:00 AM,7:00 PM,Safe
+Chota Imambara ,Lucknow,Heritage,4.5,26.8475,80.9155,7:00 AM,7:00 PM,Safe
+City Mall,Gorakhpur,Shopping Mall,4.1,26.757,83.3733,10:30 AM,11:00 PM,Safe
+Colaba Causeway,Mumbai,Market,4.4,18.9217,72.8331,10:00 AM,9:00 PM,Safe (Crowded)
+Coorg (Kodagu),Karnataka,Hill Station,4.6,12.3375,75.8069,6:00 AM,6:00 PM,Safe
+Dagdusheth Halwai Ganpati Temple,Pune,Religious,4.6,18.5169,73.8563,6:00 AM,10:00 PM,Safe
+Dakshineswar Kali Temple,Kolkata,Religious,4.6,22.6553,88.3779,4:00 AM,10:00 PM,Safe
+Darjeeling,West Bengal,Hill Station,4.6,27.036,88.2627,6:00 AM,9:00 PM,Safe
+Darjeeling (Town),Darjeeling,Hill Station,4.6,27.036,88.2627,6:00 AM,9:00 PM,Safe
+Dashashwamedh Ghat,Varanasi,Ghat,4.7,25.3066,83.0097,12:00 AM,12:00 AM,Safe
+Delhi Zoo,Delhi,Wildlife,4.2,28.6073,77.2467,9:00 AM,4:30 PM,Safe
+Dilli Haat,Delhi,Market,4.2,28.567,77.209,10:30 AM,10:00 PM,Safe
+Dr. Ram Manohar Lohia Park,Lucknow,Park,4.3,26.833,80.928,5:00 AM,9:00 PM,Safe
+Dr. Ram Manohar Lohia Park,Lucknow,Park,4.3,26.833,80.928,5:00 AM,9:00 PM,Safe
+Elephanta Caves,Mumbai,Historical,4.3,18.9633,72.931,9:00 AM,10:00 PM,Safe
+Elephanta Caves,Mumbai,Historical,4.3,18.9633,72.931,9:00 AM,5:30 PM,Safe
+Ganga Aarti Spot,Varanasi,Cultural,4.8,25.3066,83.0097,6:30 PM,8:00 PM,Safe (Evening)
+Gateway of India,Mumbai,Monument,4.5,18.9218,72.8347,5:00 AM,11:00 PM,Safe
+Gateway of India,Mumbai,Monument,4.6,18.9218,72.8347,5:00 AM,11:00 PM,Safe
+Geeta Vatika,Gorakhpur,Religious,4.5,26.7645,83.376,6:00 AM,8:00 PM,Safe
+Geetapress,Gorakhpur,Religious,4.6,26.7575,83.3698,6:00 AM,8:00 PM,Safe
+Gol Gumbaz,Bijapur,Historical,4.4,16.8303,75.7106,9:00 AM,5:30 PM,Safe
+Golghar Kali Mandir,Gorakhpur,Religious,4.5,26.7523,83.3711,5:00 AM,10:00 PM,Safe
+Gorakhnath Mandir,Gorakhpur,Religious,4.8,26.7634,83.3783,4:00 AM,10:00 PM,Safe
+Gorakhpur Zoo,Gorakhpur,WildLife,4.4,26.7485,83.3728,9:00 AM,5:30 PM,Safe
+Haji Ali Dargah,Mumbai,Religious,4.5,18.982,72.8098,6:00 AM,10:00 PM,Safe
+Hampi,Karnataka,Heritage,4.4,15.335,76.46,6:00 AM,5:30 PM,Safe
+Hampi,Karnataka,Heritage,4.4,15.335,76.46,6:00 AM,5:30 PM,Safe
+Har Ki Pauri,Uttarakhand,Religious,4.7,29.9457,78.163,4:00 AM,10:00 PM,Safe
+Hauz Khas Village,Delhi,Heritage,4.3,28.5494,77.1996,10:30 AM,7:00 PM,Safe
+Hazratganj Market,Lucknow,Market,4.5,26.8467,80.9462,10:00 AM,10:00 PM,Safe (Crowded)
+Himalayan Mountaineering Institute,Darjeeling,Museum,4.4,27.0365,88.2659,9:00 AM,4:00 PM,Safe
+Howrah Bridge,Kolkata,Heritage,4.5,22.5848,88.3464,12:00 AM,12:00 AM,Safe
+Humayun's Tomb,Delhi,Historical,4.6,28.5933,77.2507,6:00 AM,6:00 PM,Safe
+Husainabad Clock Tower,Lucknow,Monument,4.3,26.849,80.916,8:00 AM,8:00 PM,Safe
+Husainabad Clock Tower,Lucknow,Monument,4.3,26.849,80.916,8:00 AM,8:00 PM,Safe
+Imambara,Lucknow,Historical,4.5,26.8467,80.9462,6:00 AM,8:00 PM,Safe
+India Gate,Delhi,Monument,4.7,28.6129,77.2295,12:00 AM,12:00 AM,Safe
+India Gate,Delhi,Monument,4.7,28.6129,77.2295,12:00 AM,12:00 AM,Safe
+Indian Museum,Kolkata,Museum,4.4,22.5726,88.3485,10:00 AM,5:00 PM,Safe
+Indira Bal Vihar,Gorakhpur,Park,4.3,26.761,83.3702,6:00 AM,8:00 PM,Safe
+ISKCON Temple,Delhi,Religious,4.6,28.5562,77.2682,4:30 AM,9:00 PM,Safe
+Jama Masjid,Delhi,Religious,4.4,28.6507,77.2334,7:00 AM,6:30 PM,Safe
+Janeshwar Mishra Park,Lucknow,Park,4.4,26.8371,80.997,5:00 AM,9:00 PM,Safe
+Jim Corbett National Park,Uttarakhand,Wildlife,4.6,29.53,78.7747,6:00 AM,6:00 PM,Safe (with guide)
 Juhu Beach,Mumbai,Beach,4.5,19.076,72.8325,12:00 AM,12:00 AM,Safe
+Juhu Beach,Mumbai,Beach,4.5,19.076,72.8325,12:00 AM,12:00 AM,Safe
+Kashi Vishwanath Temple,Varanasi,Religious,4.8,25.3109,83.0106,4:00 AM,11:00 PM,Safe
+Kasi Vishwanath Temple,Varanasi,Religious,4.8,25.3109,83.0106,4:00 AM,11:00 PM,Safe
+Kedarnath Temple,Uttarakhand,Religious,4.7,30.7352,79.0669,4:00 AM,11:00 PM,Safe
+Kedarnath Temple,Uttarakhand,Religious,4.8,30.7352,79.0669,4:00 AM,11:00 PM,Safe (seasonal access)
+Kempty Falls,Uttarakhand,Scenic,4.3,30.4473,78.074,8:00 AM,5:00 PM,Safe (slippery areas)
+Lalbagh Botanical Garden,Bangalore,Garden,4.7,12.9507,77.5848,6:00 AM,7:00 PM,Safe
+Lodhi Garden,Delhi,Park,4.5,28.5916,77.2198,6:00 AM,8:00 PM,Safe
+Lotus Temple,Delhi,Religious,4.6,28.5535,77.2588,9:00 AM,5:00 PM,Safe
+Lucknow Zoo,Lucknow,WildLife,4.2,26.854,80.9195,8:00 AM,5:00 PM,Safe
+Lucknow Zoo (Nawab Wajid Ali Shah),Lucknow,Wildlife,4.2,26.854,80.9195,8:00 AM,5:00 PM,Safe
+Manikarnika Ghat,Varanasi,Ghat,4.4,25.3087,83.0086,12:00 AM,12:00 AM,Safe
+Marble Palace,Kolkata,Heritage,4.3,22.5763,88.3512,10:00 AM,5:00 PM,Safe
+Marine Drive,Mumbai,Scenic,4.6,18.943,72.8238,12:00 AM,12:00 AM,Unsafe
+Marine Drive,Mumbai,Scenic,4.7,18.943,72.8238,12:00 AM,12:00 AM,Unsafe (late night)
+Mussoorie Mall Road,Uttarakhand,Market,4.5,30.455,78.0707,9:00 AM,9:00 PM,Safe
+Mysore Palace,Mysore,Historical,4.7,12.3052,76.6551,10:00 AM,5:30 PM,Safe
+Naina Devi Temple,Uttarakhand,Religious,4.6,29.3936,79.4541,5:00 AM,9:30 PM,Safe
+Nainital Lake,Uttarakhand,Scenic,4.7,29.3928,79.4542,6:00 AM,6:00 PM,Safe
+National Museum,Delhi,Museum,4.4,28.611,77.2197,10:00 AM,5:00 PM,Safe
+Nauka Vihar,Gorakhpur,Scenic,4.2,26.7637,83.3892,4:00 AM,10:00 PM,Unsafe
+Nehru Planetarium,Delhi,Science,4.3,28.6271,77.2116,11:00 AM,5:00 PM,Safe
+Nehru Planetarium,Mumbai,Science,4.3,18.9905,72.8168,11:00 AM,5:00 PM,Safe
+Osho Ashram,Pune,Spiritual,4.2,18.5203,73.843,9:00 AM,6:00 PM,Safe
+Padmaja Naidu Himalayan Zoological Park,Darjeeling,Wildlife,4.3,27.0351,88.2608,9:00 AM,5:00 PM,Safe
+Parvati Hill,Pune,Religious,4.1,18.5377,73.8623,6:00 AM,8:00 PM,Safe
+Pataleshwar Cave Temple,Pune,Historical,4.3,18.5195,73.8577,6:00 AM,8:00 PM,Safe
+Pune Okayama Friendship Garden,Pune,Garden,4.2,18.5056,73.8697,6:00 AM,8:00 PM,Safe
+Qutub Minar,Delhi,Historical,4.5,28.5244,77.1855,7:00 AM,5:00 PM,Safe
+Qutub Minar,Delhi,Historical,4.5,28.5244,77.1855,7:00 AM,5:00 PM,Safe
+Rail Museaum,Gorakhpur,Museum,4.1,26.755,83.3755,10:00 AM,5:00 PM,Safe
+Raj Ghat,Delhi,Memorial,4.5,28.6407,77.2496,6:00 AM,6:00 PM,Safe
+Raja Dinkar Kelkar Museum,Pune,Museum,4.4,18.5161,73.847,10:30 AM,5:00 PM,Safe
+Rajiv Gandhi Zoological Park,Pune,Wildlife,4,18.5431,73.8672,9:00 AM,5:30 PM,Safe
+Rashtrapati Bhavan,Delhi,Government,4.6,28.6144,77.1996,9:00 AM,4:00 PM,Safe
+Red Fort,Delhi,Historical,4.6,28.6562,77.241,9:30 AM,4:30 PM,Safe
+Red Fort,Delhi,Historical,4.6,28.6562,77.241,9:30 AM,4:30 PM,Safe
+Robber's Cave (Guchhupani),Uttarakhand,Scenic,4.4,30.3641,78.0596,7:00 AM,6:00 PM,Safe
+Rumi Darwaza,Lucknow,Monument,4.4,26.846,80.919,12:00 AM,12:00 AM,Safe
+Rumi Darwaza,Lucknow,Monument,4.4,26.846,80.919,12:00 AM,12:00 AM,Safe
+Sanchi Stupa,Bhopal,Historical,4.6,23.2599,77.4126,8:30 AM,5:30 PM,Safe
 Sanjay Gandhi National Park,Mumbai,Park,4.4,19.2167,72.8567,9:00 AM,6:00 PM,Safe
+Sanjay Gandhi National Park,Mumbai,Park,4.4,19.2167,72.8567,9:00 AM,6:00 PM,Safe
+Sankat Mochan Mandir,Varanasi,Religious,4.6,25.2775,83.0007,5:00 AM,10:00 PM,Safe
+Sarnath,Varanasi,Historical,4.5,25.381,83.022,9:00 AM,5:00 PM,Safe
+Sarojini Nagar Market,Delhi,Market,4.2,28.5756,77.1995,10:00 AM,9:00 PM,Safe (Busy)
+Shanivar Wada,Pune,Historical,4.3,18.5204,73.8567,8:00 AM,6:30 PM,Safe
+Shaniwar Wada,Pune,Historical,4.3,18.5204,73.8567,8:00 AM,6:30 PM,Safe
 Shree Siddhivinayak Temple,Mumbai,Religious,4.7,19.0176,72.83,5:30 AM,10:00 PM,Safe
+Siddhivinayak Temple,Mumbai,Religious,4.8,19.0176,72.83,5:30 AM,10:00 PM,Safe
+Sinhagad Fort,Pune,Historical,4.4,18.3661,73.7497,6:00 AM,6:00 PM,Safe
+St. Mary’s Basilica,Bangalore,Religious,4.3,12.9739,77.5956,7:00 AM,7:00 PM,Safe
+Taj Mahal,Agra,Historical,4.9,27.1751,78.0421,6:00 AM,6:30 PM,Safe
+Tapkeshwar Mahadev Temple,Uttarakhand,Religious,4.5,30.3134,78.0642,6:00 AM,7:00 PM,Safe
+Tarkulha Devi Mandir,Gorakhpur,Religious,4.7,26.7507,83.4875,4:00 AM,10:00 PM,Safe avoid going after 9 PM
+Tiger Hill,Darjeeling,Scenic,4.7,27.0419,88.27,4:00 AM,8:00 AM,Safe (early)
+Tulsi Manas Mandir,Varanasi,Religious,4.4,25.2799,83.0028,5:00 AM,9:00 PM,Safe
+Victoria Memorial,Kolkata,Monument,4.6,22.5448,88.3426,10:00 AM,5:00 PM,Safe
+Vindhyachal Temple,Mirzapur,Religious,4.6,25.1433,82.5644,4:00 AM,11:00 PM,Safe
